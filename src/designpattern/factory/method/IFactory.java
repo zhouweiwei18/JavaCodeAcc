@@ -8,9 +8,8 @@ import designpattern.factory.simple.OperationSub;
 
 /**
  * 工厂接口
- * 
- * @author liu yuning
  *
+ * @author liu yuning
  */
 public interface IFactory {
     public Operation createOperation();
@@ -18,36 +17,32 @@ public interface IFactory {
 
 class AddFactory implements IFactory {
 
-    @Override
-    public Operation createOperation() {
-	return new OperationAdd();
+    @Override public Operation createOperation() {
+        return new OperationAdd();
     }
 
 }
 
 class SubFactory implements IFactory {
 
-    @Override
-    public Operation createOperation() {
-	return new OperationSub();
+    @Override public Operation createOperation() {
+        return new OperationSub();
     }
 
 }
 
 class MulFactory implements IFactory {
 
-    @Override
-    public Operation createOperation() {
-	return new OperationMul();
+    @Override public Operation createOperation() {
+        return new OperationMul();
     }
 
 }
 
 class DivFactory implements IFactory {
 
-    @Override
-    public Operation createOperation() {
-	return new OperationDiv();
+    @Override public Operation createOperation() {
+        return new OperationDiv();
     }
 
 }
